@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaLand Trading - Admin</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400">Utenti Attivi</h3>
+                <p class="text-2xl font-bold" id="activeUsers">0</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400">Trade Oggi</h3>
+                <p class="text-2xl font-bold" id="dailyTrades">0</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400">Volume 24h</h3>
+                <p class="text-2xl font-bold" id="volume">$0</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400">Errori 24h</h3>
+                <p class="text-2xl font-bold text-red-500" id="errors">0</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-4 mb-6">
+            <h2 class="text-xl font-bold mb-4">Utenti Attivi</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left py-2">User ID</th>
+                            <th class="text-left py-2">Username</th>
+                            <th class="text-left py-2">Trades</th>
+                            <th class="text-left py-2">P/L</th>
+                            <th class="text-left py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTable">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
